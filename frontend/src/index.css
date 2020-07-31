@@ -1,0 +1,84 @@
+.user{    /* grid container class for diiferent areas */
+  display: grid;
+  grid-template-areas:
+  "header"
+  "main"
+  "footer";
+  grid-template-columns: 1fr;   /* 1 fragment */
+  grid-template-rows: 5rem 1fr 5rem; /* for three rows header,main,footer */
+  height: 100%;
+}
+
+.header{
+  grid-area: header;
+  background-color: orange;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.main{
+  grid-area: main;
+  padding: 6rem;
+}
+
+.footer{
+  grid-area: footer;
+  background-color: orange;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-top{
+  color: rebeccapurple;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+/* userscreen section */
+.users{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.users li{
+  list-style-type: none;
+  padding: 0;
+  flex: 0 1 34rem;
+  margin: 1rem;
+  height: 20rem;
+}
+
+.member{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70%;
+  flex-wrap: wrap;
+}
+
+.member-id{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.member-name{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.member-loc{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.time-ranges{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
